@@ -1,0 +1,11 @@
+#!/bin/bash
+
+svn rm --quiet libfreenect
+git clone https://github.com/OpenKinect/libfreenect.git libfreenect2
+rm -Rf libfreenect2/.git libfreenect2/.gitignore
+cp -R libfreenect2/ libfreenect/
+rm -Rf libfreenect2/
+patch < libfreenect-kineme.patch
+svn add --quiet libfreenect
+svn update libfreenect
+svn commit libfreenect -m "KinectTools: updated libfreenect [minor]"

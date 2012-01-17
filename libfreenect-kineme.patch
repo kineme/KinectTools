@@ -1,0 +1,34 @@
+--- libfreenect/include/libfreenect.h.old	2010-11-24 15:46:20.000000000 -0500
++++ libfreenect/include/libfreenect.h	2010-11-24 15:45:45.000000000 -0500
+@@ -74,7 +74,7 @@
+ typedef struct _freenect_device freenect_device;
+ 
+ // usb backend specific section
+-#include <libusb-1.0/libusb.h>
++#include <libusb.h>
+ typedef libusb_context freenect_usb_context;
+ //
+ 
+--- libfreenect/src/usb_libusb10.c.old	2010-11-24 15:49:25.000000000 -0500
++++ libfreenect/src/usb_libusb10.c	2010-11-24 15:49:30.000000000 -0500
+@@ -28,7 +28,7 @@
+ #include <stdbool.h>
+ #include <stdlib.h>
+ #include <string.h>
+-#include <libusb-1.0/libusb.h>
++#include <libusb.h>
+ #include "freenect_internal.h"
+ 
+ int fnusb_init(fnusb_ctx *ctx, freenect_usb_context *usb_ctx)
+
+--- libfreenect/src/usb_libusb10.h.old	2010-11-24 15:51:29.000000000 -0500
++++ libfreenect/src/usb_libusb10.h	2010-11-24 15:49:13.000000000 -0500
+@@ -27,7 +27,7 @@
+ #ifndef USB_LIBUSB10
+ #define USB_LIBUSB10
+ 
+-#include <libusb-1.0/libusb.h>
++#include <libusb.h>
+ 
+ #if defined(__APPLE__)
+ /*

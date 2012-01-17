@@ -1,0 +1,9 @@
+Brandyn White
+bwhite@dappervision.com
+
+
+Build with (goes in this directory)
+python setup.py build_ext --inplace
+
+
+

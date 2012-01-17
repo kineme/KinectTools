@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>nodeAttributes</key>
+	<dict>
+		<key>name</key>
+		<string>Kinect</string>
+		<key>categories</key>
+		<array>
+			<string>KinectTools</string>
+		</array>
+		<key>copyright</key>
+		<string>Copyright 2010 Kosada Incorporated. All rights reserved.</string>
+		<key>description</key>
+		<string>This patch provides Depth and Color image outputs from the Kinect for Xbox 360.
+
+No additional drivers are necessary — just plug in the Kinect and run this patch.
+		
+http://kineme.net/</string>
+	</dict>
+	<key>inputAttributes</key>
+	<dict>
+		<key>inputDeviceID</key>
+		<dict>
+			<key>name</key>
+			<string>Device ID</string>
+			<key>description</key>
+			<string>Kinect Device ID (starting at zero)</string>
+		</dict>
+	</dict>
+	<key>outputAttributes</key>
+	<dict>
+		<key>outputConnected</key>
+		<dict>
+			<key>name</key>
+			<string>Connected</string>
+			<key>description</key>
+			<string>Are we connected to the camera?</string>
+		</dict>
+		<key>outputColorImage</key>
+		<dict>
+			<key>name</key>
+			<string>Color Image</string>
+			<key>description</key>
+			<string>Color Image</string>
+		</dict>
+		<key>outputDepthImage</key>
+		<dict>
+			<key>name</key>
+			<string>Depth Image</string>
+			<key>description</key>
+			<string>Depth Image</string>
+		</dict>
+		<key>outputAccelerationX</key>
+		<dict>
+			<key>name</key>
+			<string>X Acceleration</string>
+			<key>description</key>
+			<string>X Acceleration</string>
+		</dict>
+		<key>outputAccelerationY</key>
+		<dict>
+			<key>name</key>
+			<string>Y Acceleration</string>
+			<key>description</key>
+			<string>Y Acceleration</string>
+		</dict>
+		<key>outputAccelerationZ</key>
+		<dict>
+			<key>name</key>
+			<string>Z Acceleration</string>
+			<key>description</key>
+			<string>Z Acceleration</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

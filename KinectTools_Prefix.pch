@@ -1,0 +1,6 @@
+// Prefix header for all source files of the 'KinectTools' target in the 'KinectTools' project.
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+    #import <SkankySDK/SkankySDK.h>
+#endif

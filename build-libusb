@@ -1,0 +1,27 @@
+#!/bin/bash
+
+wget 'http://git.libusb.org/?p=libusb.git;a=snapshot;h=7da756e09fd97efad2b35b5cee0e2b2550aac2cb;sf=tgz;js=1' -O libusb-7da756e.tgz
+tar zxf libusb-7da756e.tgz
+rm -f libusb-7da756e.tgz
+cd libusb-7da756e
+
+patch -p1 < ../libfreenect/platform/osx/libusb-osx-kinect.diff
+
+./autogen.sh
+
+make clean
+./configure CC="gcc-4.0" CFLAGS="-g -O2 -mmacosx-version-min=10.5 -arch i386" CXXFLAGS="-g -O2 -mmacosx-version-min=10.5 -arch i386" CXX="g++-4.0"
+make
+cp ./libusb/.libs/libusb-1.0.a ../libusb-1.0-i386.a
+
+make clean
+./configure CC="gcc-4.0" CFLAGS="-g -O2 -mmacosx-version-min=10.5 -arch x86_64" CXXFLAGS="-g -O2 -mmacosx-version-min=10.5 -arch x86_64" CXX="g++-4.0" LDFLAGS="-arch x86_64"
+make
+cp ./libusb/.libs/libusb-1.0.a ../libusb-1.0-x86_64.a
+
+cd ..
+
+lipo libusb-1.0-* -output usb-1.0.a -create
+
+cp libusb-7da756e/libusb/libusb.h .
+rm -Rf libusb-7da756e

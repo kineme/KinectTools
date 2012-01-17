@@ -1,0 +1,301 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B39ECC9129DB1B0005CD89F /* tilt.c in Sources */ = {isa = PBXBuildFile; fileRef = 2B39ECC7129DB1B0005CD89F /* tilt.c */; };
+		2B39ECCA129DB1B0005CD89F /* usb_libusb10.c in Sources */ = {isa = PBXBuildFile; fileRef = 2B39ECC8129DB1B0005CD89F /* usb_libusb10.c */; };
+		2B5468F21290862D008DDC7F /* cameras.c in Sources */ = {isa = PBXBuildFile; fileRef = 2B5468EF1290862D008DDC7F /* cameras.c */; };
+		2B5468F31290862D008DDC7F /* core.c in Sources */ = {isa = PBXBuildFile; fileRef = 2B5468F11290862D008DDC7F /* core.c */; };
+		2B5469001290870F008DDC7F /* KinectPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5468FF1290870F008DDC7F /* KinectPatch.m */; };
+		2B54692212908ADC008DDC7F /* usb-1.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B54692112908ADC008DDC7F /* usb-1.0.a */; };
+		2B54692612908AF1008DDC7F /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B54692512908AF1008DDC7F /* IOKit.framework */; };
+		2B54692A12908B10008DDC7F /* KinectPatch.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2B54692912908B10008DDC7F /* KinectPatch.xml */; };
+		7533202D10091AF0003756A8 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7533202C10091AF0003756A8 /* OpenGL.framework */; };
+		7533202F10091AF0003756A8 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7533202E10091AF0003756A8 /* Quartz.framework */; };
+		7533203810091B32003756A8 /* KinectToolsPrincipal.m in Sources */ = {isa = PBXBuildFile; fileRef = 7533203710091B32003756A8 /* KinectToolsPrincipal.m */; };
+		8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		2AA7F9E110D13B7000A2DD16 /* SkankySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SkankySDK.framework; path = /Library/Frameworks/SkankySDK.framework; sourceTree = "<absolute>"; };
+		2B39ECC7129DB1B0005CD89F /* tilt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = tilt.c; path = libfreenect/src/tilt.c; sourceTree = "<group>"; };
+		2B39ECC8129DB1B0005CD89F /* usb_libusb10.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = usb_libusb10.c; path = libfreenect/src/usb_libusb10.c; sourceTree = "<group>"; };
+		2B5468EE1290862D008DDC7F /* libfreenect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = libfreenect.h; path = libfreenect/include/libfreenect.h; sourceTree = "<group>"; };
+		2B5468EF1290862D008DDC7F /* cameras.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cameras.c; path = libfreenect/src/cameras.c; sourceTree = "<group>"; };
+		2B5468F11290862D008DDC7F /* core.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = core.c; path = libfreenect/src/core.c; sourceTree = "<group>"; };
+		2B5468F612908644008DDC7F /* libusb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libusb.h; sourceTree = "<group>"; };
+		2B5468FE1290870F008DDC7F /* KinectPatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KinectPatch.h; sourceTree = "<group>"; };
+		2B5468FF1290870F008DDC7F /* KinectPatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KinectPatch.m; sourceTree = "<group>"; };
+		2B54692112908ADC008DDC7F /* usb-1.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "usb-1.0.a"; sourceTree = "<group>"; };
+		2B54692512908AF1008DDC7F /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		2B54692912908B10008DDC7F /* KinectPatch.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = KinectPatch.xml; sourceTree = "<group>"; };
+		32DBCF630370AF2F00C91783 /* KinectTools_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KinectTools_Prefix.pch; sourceTree = "<group>"; };
+		7533202C10091AF0003756A8 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		7533202E10091AF0003756A8 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = /System/Library/Frameworks/Quartz.framework; sourceTree = "<absolute>"; };
+		7533203610091B32003756A8 /* KinectToolsPrincipal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KinectToolsPrincipal.h; sourceTree = "<group>"; };
+		7533203710091B32003756A8 /* KinectToolsPrincipal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KinectToolsPrincipal.m; sourceTree = "<group>"; };
+		8D5B49B6048680CD000E48DA /* KinectTools.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KinectTools.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D5B49B3048680CD000E48DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */,
+				7533202D10091AF0003756A8 /* OpenGL.framework in Frameworks */,
+				7533202F10091AF0003756A8 /* Quartz.framework in Frameworks */,
+				2B54692212908ADC008DDC7F /* usb-1.0.a in Frameworks */,
+				2B54692612908AF1008DDC7F /* IOKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* KinectTools */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AFFE84173DC02AAC07 /* Classes */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				089C1671FE841209C02AAC07 /* Frameworks and Libraries */,
+				32C88E010371C26100C91783 /* Other Sources */,
+				19C28FB8FE9D52D311CA2CBB /* Products */,
+				2B54692512908AF1008DDC7F /* IOKit.framework */,
+			);
+			name = KinectTools;
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				2B39ECC7129DB1B0005CD89F /* tilt.c */,
+				2B39ECC8129DB1B0005CD89F /* usb_libusb10.c */,
+				2B54692112908ADC008DDC7F /* usb-1.0.a */,
+				2B5468F612908644008DDC7F /* libusb.h */,
+				2B5468EE1290862D008DDC7F /* libfreenect.h */,
+				2B5468EF1290862D008DDC7F /* cameras.c */,
+				2B5468F11290862D008DDC7F /* core.c */,
+				1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */,
+			);
+			name = "Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D5B49B7048680CD000E48DA /* Info.plist */,
+				2B54692912908B10008DDC7F /* KinectPatch.xml */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AFFE84173DC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7533203610091B32003756A8 /* KinectToolsPrincipal.h */,
+				7533203710091B32003756A8 /* KinectToolsPrincipal.m */,
+				75AA971B10093C25000986A3 /* Patches */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2AA7F9E110D13B7000A2DD16 /* SkankySDK.framework */,
+				1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */,
+				7533202C10091AF0003756A8 /* OpenGL.framework */,
+				7533202E10091AF0003756A8 /* Quartz.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FB8FE9D52D311CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D5B49B6048680CD000E48DA /* KinectTools.plugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32C88E010371C26100C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32DBCF630370AF2F00C91783 /* KinectTools_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		75AA971B10093C25000986A3 /* Patches */ = {
+			isa = PBXGroup;
+			children = (
+				2B5468FE1290870F008DDC7F /* KinectPatch.h */,
+				2B5468FF1290870F008DDC7F /* KinectPatch.m */,
+			);
+			name = Patches;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D5B49AC048680CD000E48DA /* KinectTools */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "KinectTools" */;
+			buildPhases = (
+				8D5B49B1048680CD000E48DA /* Sources */,
+				8D5B49B3048680CD000E48DA /* Frameworks */,
+				8D5B49AF048680CD000E48DA /* Resources */,
+				7533205110091C18003756A8 /* PostProcessing */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KinectTools;
+			productInstallPath = "$(HOME)/Library/Bundles";
+			productName = KinectTools;
+			productReference = 8D5B49B6048680CD000E48DA /* KinectTools.plugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+			};
+			buildConfigurationList = 1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "KinectTools" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 089C166AFE841209C02AAC07 /* KinectTools */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D5B49AC048680CD000E48DA /* KinectTools */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D5B49AF048680CD000E48DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B54692A12908B10008DDC7F /* KinectPatch.xml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7533205110091C18003756A8 /* PostProcessing */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = PostProcessing;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "php /Library/Frameworks/SkankySDK.framework/Resources/plugin-postprocess.php \"$TARGET_BUILD_DIR/$FULL_PRODUCT_NAME\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D5B49B1048680CD000E48DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7533203810091B32003756A8 /* KinectToolsPrincipal.m in Sources */,
+				2B5468F21290862D008DDC7F /* cameras.c in Sources */,
+				2B5468F31290862D008DDC7F /* core.c in Sources */,
+				2B5469001290870F008DDC7F /* KinectPatch.m in Sources */,
+				2B39ECC9129DB1B0005CD89F /* tilt.c in Sources */,
+				2B39ECCA129DB1B0005CD89F /* usb_libusb10.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB913C08733D840010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREFIX_HEADER = KinectTools_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				PRODUCT_NAME = KinectTools;
+			};
+			name = Release;
+		};
+		1DEB914008733D840010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					x86_64,
+					i386,
+				);
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_MODEL_TUNING = G5;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_STRICT_ALIASING = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACH_O_TYPE = mh_bundle;
+				PREBINDING = NO;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = macosx10.5;
+				SYMROOT = $TMPDIR/build;
+				WRAPPER_EXTENSION = plugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "KinectTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB913C08733D840010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "KinectTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB914008733D840010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}
